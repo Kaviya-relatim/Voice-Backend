@@ -1,0 +1,30 @@
+# Relatim Backend Requirements
+# =============================
+# Install with: pip install -r requirements.txt
+
+# FastAPI for token server
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+python-dotenv>=1.0.0
+
+# LiveKit Server SDK for token generation
+livekit-api>=1.0.0
+
+# LiveKit Agents Framework
+livekit-agents>=1.3.0
+
+# STT - Deepgram plugin
+livekit-plugins-deepgram>=1.3.0
+
+# TTS - Cartesia plugin (reliable with LiveKit)
+livekit-plugins-cartesia>=1.3.0
+
+# VAD - Silero plugin (voice activity detection)
+livekit-plugins-silero>=1.3.0
+
+# LLM - Groq plugin
+livekit-plugins-groq>=1.3.0
+
+# Pydantic for data validation
+pydantic>=2.5.3
+

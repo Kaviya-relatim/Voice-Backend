@@ -1,0 +1,16 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Install dependencies
+COPY requirements-server.txt .
+RUN pip install --no-cache-dir -r requirements-server.txt
+
+# Copy application
+COPY token_server.py .
+
+# Expose port
+EXPOSE 8080
+
+# Run the application
+CMD ["uvicorn", "token_server:app", "--host", "0.0.0.0", "--port", "8080"]
